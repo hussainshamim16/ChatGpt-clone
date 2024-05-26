@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="bar1">
+        <div class="head flex">
+            <div class="logo">
+                <img src="https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png" alt="chatGPT">
+            </div>
+            <div class="heading">
+                <h3>New Chat</h3>
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-pen-to-square" onmouseenter="showMassage('show')" onmouseout="deletMessege('delet')"></i>                
+            </div>
+        </div>
+        
+        <div class="end">
+            <h3>Sign up or Login</h3>
+            <p>Get smarter responses, upload files and images, and more.</p>
+            <button class="green">Sign up</button>
+            <button>Log in</button>
+        </div>
+    </section>
+    <div id="massage">
+        <p>
+            New Chat
+        </p>
+    </div>
+    <section class="bar2">
+        <div class="head">
+            <img src="https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png" alt="chatGPT">
+            <h2>How can I help you today?</h2>
+        </div>
+        <div class="boxes">
+            <div class="box" id="box">
+                <h4>Writing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
+                <i class="fa-solid fa-arrow-up-long" id="icon"></i>
+            </div>
+            <div class="box" id="box">
+                <h4>Writing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
+                <i class="fa-solid fa-arrow-up-long" id="icon"></i>
+            </div>
+            <div class="box" id="box">
+                <h4>Writing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
+                <i class="fa-solid fa-arrow-up-long" id="icon"></i>
+            </div>
+            <div class="box" id="box">
+                <h4>Writing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
+                <i class="fa-solid fa-arrow-up-long" id="icon"></i>
+            </div>
+        </div>
+        <div class="chat">
+            <input type="text" placeholder="Massage ChatGpt">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+
+</html>

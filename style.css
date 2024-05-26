@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap');
+
+:root {
+    --white: #ffff;
+    --lightwhite: #ffffff11;
+    --black: #0a0a0a;
+    --yellow: #f6c90e;
+
+}
+
+* {
+    font-family: "Righteous", sans-serif;
+}
+#massage{
+    background-color: rgb(3, 3, 3);
+    width: 7%;
+height: auto;
+position: absolute;
+top: 20px;
+left: 23%;
+    padding: 5px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    transition-duration: 4s;
+    display: none;
+}
+#massage p{
+    color: white;
+    letter-spacing: 3;
+    font-size: 12px;
+    /* font-weight: bold; */
+    width: 100%;
+    
+}
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    
+
+}
+
+.bar1 {
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(238, 248, 255);
+    padding: 10px 20px;
+    
+}
+
+.bar1 .head {
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: end; */
+    transition-duration: 0.4s;
+    padding: 0px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bar1 .head:hover {
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+.bar1 .head img {
+    width: 80%;
+
+    text-align: center;
+}
+
+.bar1 .head div {
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+
+.bar1 .head .logo {
+    width: 25%;
+    margin-right: 2px;
+}
+
+.bar1 .head .heading {
+    width: 100%;
+    font-size: 14px;
+}
+
+.bar1 .head .icon {
+    font-size: 17px;
+    text-align: right;
+    width: 20%;
+}
+
+.bar1 .end button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.bar1 .end button.green {
+    background-color: rgb(2, 133, 89);
+    border: none;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.bar1 .end button.green:hover {
+    background-color:  rgb(2, 170, 114);
+}
+
+
+.bar1 .end p {
+    font-size: 12px;
+}
+
+.bar2 {
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.bar2 .head {
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.bar2 .head img {
+    width: 10%;
+}
+
+.bar2 .boxes {
+    /* border: 1px solid blue; */
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.bar2 .boxes .box {
+    border: 1px solid rgb(70, 70, 70);
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bar2 .boxes .box:hover {
+    background-color: red;
+}
+
+.bar2 .boxes .box h1 {
+    font-size: 12px;
+}
+
+.bar2 .boxes .box p {
+    font-size: 11px;
+}
+.bar2 .boxes .box i {
+    font-size: 13px;
+    background-color: rgb(224, 224, 224);
+    padding: 6px;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    top: -65%;
+    right: -90%;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.bar2 .chat {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+
+}
+
+.bar2 .chat input {
+
+    /* background-color: red; */
+    padding: 20px 30px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+}
+
+.bar2 .chat i {
+
+    width: auto;
+    /* background-color: red; */
+    background-color: #bfbffc71;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+.bar2 .chat i:hover{
+    background-color: #bfbffcc9;
+}
+
+@media screen and (max-width: 500px) {
+
+
+    body {
+        background-color: var(--white);
+        color: var(--black);
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        flex-direction: column;
+
+    }
+
+    .bar1 {
+
+        width: auto;
+        height: auto;
+        display: block;
+
+        margin-bottom: 50px;
+    }
+
+    .bar2 {
+
+        width: auto;
+
+    }
+
+    .bar2 .head img {
+        width: 15%;
+    }
+
+    .bar2 .boxes .box h1 {
+        font-size: 4px;
+    }
+
+    .bar2 .boxes .box p {
+        font-size: 9px;
+    }
+
+    .bar2 .chat {
+        /* border: 1px solid red; */
+        width: auto;
+        text-align: center;
+
+    }
+
+    .bar2 .chat input {
+        width: 50%;
+    }
+}
